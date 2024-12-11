@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trivia Challenge </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-setup">
+        <h1><b><u>TRIVIA BATTLE GAME </u></b></h1>
+        <input id="player1-name" type="text" placeholder=" Enter name of Player 1" />
+        <input id="player2-name" type="text" placeholder=" Enter name of Player 2" />
+        <button id="start-game-btn">🚀 Start Game</button>
+    </div>
+
+    <div id="category-selection" class="inv">
+        <h2><b>Select Category</b></h2>
+        <select id="category-list">  
+            <option value="18">💻 Computers</option>
+            <option value="21">🏆 Sports</option>
+            <option value="12">🎶 Music</option> 
+            <option value="17">🔬 Science</option> 
+            <option value="23">📜 History</option> 
+        </select>
+        <button id="next-category-btn">➡️ Next</button>
+    </div>
+    
+    <div id="difficulty-selection" class="inv">
+        <h2><b>🔍 Select Levels</b></h2>
+        <select id="difficulty-list">
+            <option value="easy">🟢 Easy</option>
+            <option value="medium">🟡 Medium</option>
+            <option value="hard">🔴 Hard</option>
+        </select>
+        <button id="start-difficulty-btn">🎮 Start Game </button>
+    </div>
+
+    <div id="trivia-game" class="inv">
+        <h2 id="current-player-name"></h2>
+        <h3 id="trivia-question"></h3>
+        <div id="answer-options">
+            <button class="answer-option"></button>
+            <button class="answer-option"></button>
+            <button class="answer-option"></button>
+            <button class="answer-option"></button>
+        </div>
+    </div>
+ 
+    <div id="game-result" class="inv">
+        <h2><b>🏁 GAME OVER 🏁</b></h2>
+        <p id="final-scores"></p>
+        <button id="restart-game-btn">🔄 Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
